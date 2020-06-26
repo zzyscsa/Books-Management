@@ -33,4 +33,9 @@
         select * from ssmbuild.books;
     </select>
 
+    <!--根据书名查询书籍-->
+    <select id="queryBookByName" resultType="books">
+        select * from ssmbuild.books where bookName = #{bookName};
+    </select>
+
 </mapper>
