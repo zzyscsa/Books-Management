@@ -27,6 +27,9 @@
 <h3>
   <a href="${pageContext.request.contextPath}/user/jumpLogin">登录</a>
 </h3>
+<h3>
+  <a href="${pageContext.request.contextPath}/user/jumpRegister">注册</a>
+</h3>
 
 </body>
 </html>

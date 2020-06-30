@@ -11,6 +11,8 @@
 
     <mappers>
         <mapper class="com.scsa.dao.BookMapper"/>
+        <mapper class="com.scsa.dao.UserMapper"/>
     </mappers>
+
 
 </configuration>

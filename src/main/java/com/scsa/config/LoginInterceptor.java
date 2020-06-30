@@ -9,8 +9,9 @@ import javax.servlet.http.HttpSession;
 //拦截器
 public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        //如果是登录页面，放行
-        if(request.getRequestURI().contains("login")) {
+        //如果是登录页面或者注册页面，放行
+        if(request.getRequestURI().contains("Register")||request.getRequestURI().contains("login")
+                ||request.getRequestURI().contains("register")) {
             return true;
         }
         HttpSession session = request.getSession();

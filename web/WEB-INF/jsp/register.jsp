@@ -4,11 +4,11 @@
     <title>Title</title>
 </head>
 
-<h1>登录页面</h1>
+<h1>注册页面</h1>
 <hr>
 
 <body>
-<form action="${pageContext.request.contextPath}/user/login">
+<form action="${pageContext.request.contextPath}/user/register">
     <span style="color: red;font-weight: bold">${error}</span>
     用户名：<input type="text" name="username"> <br>
     密码：<input type="password" name="pwd"> <br>

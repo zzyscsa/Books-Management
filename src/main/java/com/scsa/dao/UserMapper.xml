@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scsa.dao.UserMapper">
+
+    <!--根据username查询pwd-->
+    <select id="queryPwd" resultType="string">
+        select pwd from ssmbuild.user where username = #{username};
+    </select>
+
+    <!--插入一个用户-->
+    <insert id="insertUser" parameterType="user">
+        insert into ssmbuild.user(username, pwd) values(#{username}, #{pwd});
+    </insert>
+
+</mapper>
